@@ -4,7 +4,7 @@ pipeline {
    stages{
      stage('checkout'){
        steps{
-          git 'https://github.com/Laharika08/test-jenkins/tree/main', branch:'main' 
+          git branch: 'main', url: 'https://github.com/Laharika08/test-jenkins/tree/main' 
        }
      }
      stage('Install Dependencies'){
